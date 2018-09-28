@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin media-breakpoint-up($name) {
+    @if $name {
+      @media (min-width: $name) {
+        @content;
+      }
+    }
+    @else {
+      @content;
+    }
+  }
+
+body{
+    padding-top: 56px;    
+    @include media_breakpoint_up(600px){
+        padding-top: 64px;
+    }
+}

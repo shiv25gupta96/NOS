@@ -1,0 +1,45 @@
+@import '../styles.scss';
+
+.my-carousel{
+    max-height: 344px;
+
+    img{
+        //position: absolute;
+        top: 0;
+        left:0;
+        max-height: 344px;
+    }
+}
+
+.my-card-deck{
+    .card-deck{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @include media-breakpoint-up($sm){
+        .card-deck::after{
+            content: "";
+            flex: 1 0 360px;
+            max-width: 360px;
+            margin: 0 15px;
+        }
+    }
+    .card{
+        max-width: 360px;
+        border-radius: 4px;
+        overflow: hidden;
+        @include media-breakpoint-up($sm){
+            flex: 1 0 360px;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 26px;
+        }
+        .card-footer{
+            font-family: 'Pristina';
+            position: absolute;
+            bottom: 0;
+            opacity: 0.9;
+        }
+    }
+}
