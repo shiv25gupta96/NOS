@@ -1,4 +1,6 @@
 import json
+import inspect
+import os
 
 Tournaments={}
 Tournaments['Accounts']=[]
@@ -75,5 +77,5 @@ Tournaments['Accounts'].append({
 })
 print(Tournaments)
 print(type(Tournaments))
-with open('Tournaments.txt','w') as outfile:
+with open(os.path.dirname(inspect.getframeinfo(inspect.currentframe()).filename)+'\\data\\tournamentsData.ts','w') as outfile:
     json.dump(Tournaments,outfile)
