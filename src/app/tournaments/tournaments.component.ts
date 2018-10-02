@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as tourn from '../data/tournament.json';
 
 @Component({
   selector: 'app-tournaments',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tournaments.component.scss']
 })
 export class TournamentsComponent implements OnInit {
+
+  // Accounts: Object[] = tourn;
 
   constructor() { }
 

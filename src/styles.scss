@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto+Slab:300,400|Teko');
+
 $xs: 0;
 $sm: 576px;
 $md: 768px;
@@ -19,7 +21,15 @@ $xl: 1200px;
 
 body{
     padding-top: 56px;    
+    font-family: 'Oswald' , 'Sans Seriff';
+    background: rgb(8, 8, 8);
     @include media_breakpoint_up(600px){
         padding-top: 64px;
     }
+}
+
+.v-align{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
