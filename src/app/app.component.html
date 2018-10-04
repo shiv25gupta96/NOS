@@ -3,30 +3,31 @@
   <!--HEADER***********COMPONENT-->
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark orange darken-2 fixed-top scrolling-navbar">
     <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" routerLink="">NOS</a></mdb-navbar-brand>
+    <mdb-navbar-brand><a class="navbar-brand" routerLink="">War-Grounds</a></mdb-navbar-brand>
     <!-- Collapsible content -->
     <links>
         <!-- Links -->
       <ul class="navbar-nav ml-auto">
         <!-- TOURNAMENT DROPDOWN -->
         <li class="nav-item dropdown mr-3" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle" mdbWavesEffect>
-          Tournaments<span class="caret ml-1"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link" mdbWavesEffect routerLink="tournaments">
+          Tournaments<!--<span class="caret ml-1"></span>--></a>
+          <!-- <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
               <div class="divider dropdown-divider"></div>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-          </div>
+          </div> -->
         </li>
         <!-- NEWS DROPDOWN -->
         <li class="nav-item dropdown mr-3" dropdown>
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           News<span class="caret ml-1"></span></a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">PubG</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Clash Royale</a>
+              <!-- <a class="dropdown-item waves-light" mdbWavesEffect href="#">PubG</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Clash Royale</a> -->
+              <p class="pl-3 pt-2">Coming Soon...</p>
           </div>
         </li>
         <!-- STATISTICS DROPDOWN -->
@@ -34,11 +35,12 @@
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Statistics<span class="caret ml-1"></span></a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+              <!-- <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
               <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a> -->
+              <p class="pl-3 pt-2"> Coming Soon...</p>
           </div>
         </li>            
       </ul>

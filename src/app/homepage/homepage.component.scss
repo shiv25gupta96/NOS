@@ -2,6 +2,18 @@
 
 .my-carousel{
     max-height: 520px;
+    background: url("../../assets/Images/background.jpg") center no-repeat fixed;
+
+    &:after{
+        content: "";
+        position: absolute;
+        background: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #0000005c;
+    }
 
     .content-large{
         position: relative;
@@ -9,7 +21,7 @@
         width: 100%;
         height: auto;
         text-align: center;
-        background: inherit;
+        background:inherit;
         margin: 0;
         padding: 70px 50px;
         box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.4), 0 2px 10px 0 rgba(255, 255, 255, 0.2);
@@ -22,20 +34,22 @@
                     border-radius: 50%;
                 }            
         }
+        &>*{
+            z-index: 1;
+        }
         &:after{
             content: "";
             background: inherit;
             position: absolute;
             top: -25px;
             left: -25px;
-            bottom: 0;
-            right: 0;
+            bottom: -25px;
+            right: -25px;
             box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
             filter: blur(10px);
         }
         p{
             color: gainsboro;
-            font-family: 'Teko';
             font-size: 24px;
         }
     }

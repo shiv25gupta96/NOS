@@ -44,12 +44,12 @@
     <!--/Third slide-->
   <!-- </mdb-carousel> -->
   <!--/.Carousel Wrapper-->
-  <div class="content-large v-align flex-column">
-    <p>Waiting for new competitors is over!!</p>    
+  <div class="content-large v-align flex-column text-center">
+    <img src="assets/Images/brand-logo.svg">
+    <p></p>
+    <p>Wait for new competitors is over!!</p>    
     <p>Win every time you play..</p>
-    <p>Navigate through different tournaments in our tournaments page.</p>
-    <p>Why play in small zone when more bigger oportunity awaits...</p>
-    <p>Get your Stats on the Go(feature to be launched soon)</p>
+    <p class="darken">Navigate through different tournaments in the tournaments page.</p>
   </div>
 </div>
 <!-- ./row END -->
@@ -60,7 +60,7 @@
 <div class="row px-5 m-0 w-100 my-card-deck">
   <div class="card-deck mx-auto">
     <!-- 1st CARD -->
-    <div class="card my-3">
+    <div class="card my-3" (click)="redirectTo('/tournaments')">
       <div class="view w-100 h-100">
         <img class="card-img" src="./assets/Images/card-display.jpg" alt="Popular Tournaments">
         <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
@@ -74,9 +74,8 @@
             <h4 class="m-0">TOURNAMENTS</h4>
           </div>
           <div class="content-body d-flex flex-column">
-            <p class="m-0">PLAY......</p>
-            <p class="m-0">WIN....</p>
-            <p class="m-0">BECOME THE CHAMPION!!!!!!</p>
+            <p class="m-0">PLAY....WIN</p>
+            <p class="m-0">BECOME THE CHAMPIONs</p>
           </div>
         </div>
       </div>

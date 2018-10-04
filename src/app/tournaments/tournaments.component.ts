@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TournamentManagerService } from '../services/tournament-manager.service';
+import { Title } from '@angular/platform-browser';
 // import * as tourn from '../data/tournament.json';
 
 @Component({
@@ -9,10 +11,17 @@ import { Component, OnInit } from '@angular/core';
 export class TournamentsComponent implements OnInit {
 
   // Accounts: Object[] = tourn;
-
-  constructor() { }
+  tournaments: Object[];
+  constructor(public tourManager: TournamentManagerService, private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle("Tournaments");
+    this.getTournaments();
+  }
+
+  getTournaments(){
+    this.tournaments = this.tourManager.getAllTournaments();
+    console.log(this.tournaments);
   }
 
 }

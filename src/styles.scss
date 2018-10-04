@@ -22,7 +22,7 @@ $xl: 1200px;
 body{
     padding-top: 56px;    
     font-family: 'Oswald' , 'Sans Seriff';
-    background: rgb(8, 8, 8);
+    background: #18191c;
     @include media_breakpoint_up(600px){
         padding-top: 64px;
     }

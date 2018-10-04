@@ -1,3 +1,15 @@
-<p>
-  tournaments works!
-</p>
+<div class="row w-100 d-flex flex-row-wrap p-3 m-0">
+  <div class="my-tour m-2" *ngFor="let tournament of tournaments">
+    <div class="my-tour-header m-3 d-flex flex-row justify-content-between">
+      <h5 class="tour-profile">{{tournament["Profile Name"]}}</h5>
+      <p class="date d-flex align-items-center">23-Sept-2018 <span class="time ml-2">03:00 PM</span></p>
+    </div>
+    <div class="my-tour-body m-3">
+      <p>Joining Amout: Rs.50</p>
+    </div>
+    <div class="my-tour-footer m-3 d-flex flex-row justify-content-between">
+      <h6 class="tour-prize">Prize: <span>Ear-Phones</span></h6>
+      <p class="tour-organizer"><span class="icon">@</span>{{tournament["Profile Name"]}}</p>
+    </div>
+  </div>
+</div>>
