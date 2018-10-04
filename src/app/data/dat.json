@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Yo Yo pubG",
+        "date": "03-10-2018",
+        "time": "11:00 PM",
+        "type": "Solo",
+        "map": "Erangel",
+        "entry_fees": 20,
+        "prizes": {
+            "type": null,
+            "per_kill": 20
+        }
+    },
+    {
+        "name": "Regal Gaming",
+        "date": "Everyday",
+        "time": "09:00 PM",
+        "type": "Squad",
+        "map": "Erangel",
+        "entry_fees": 250,
+        "prizes": {
+            "type": "Chicken Dinner",
+            "Winner": 1000,
+            "2nd": 500,
+            "3rd": 250,
+            "4th & 5th": "Free entry to next tournament"
+        }
+    },
+    {
+        "name": "Regal Gaming",
+        "date": "Everyday",
+        "time": "10:00 PM",
+        "type": "Squad",
+        "map": "Erangel",
+        "entry_fees": 250,
+        "prizes": {
+            "type": "Chicken Dinner",
+            "Winner": 1200,
+            "2nd": 650,
+            "3rd": 300,
+            "4th & 5th": "Free entry to next tournament"
+        }
+    },
+    {
+        "name": "pubg battle",
+        "date": "05-10-2018",
+        "time": "11:00 PM",
+        "type": "Solo",
+        "map": "Erangel",
+        "entry_fees": 15,
+        "prizes": {
+            "type": null,
+            "per_kill": 11
+        }
+    }
+]
