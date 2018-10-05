@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { RouteLinksModule } from './route-links.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //---------COMPONENTS =======
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { Title } from '@angular/platform-browser';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     RouteLinksModule,
+    NgbModule.forRoot()
   ],
   providers: [Title, TournamentManagerService],
   bootstrap: [AppComponent],

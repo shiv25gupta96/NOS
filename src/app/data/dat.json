@@ -17,7 +17,7 @@
         "time": "09:00 PM",
         "type": "Squad",
         "map": "Erangel",
-        "entry_fees": 250,
+        "entry_fees": "250 each team",
         "prizes": {
             "type": "Chicken Dinner",
             "Winner": 1000,

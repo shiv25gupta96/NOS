@@ -1,15 +1,28 @@
+<!----- row start-->
 <div class="row w-100 d-flex flex-row-wrap p-3 m-0">
+  <!--SinGle Tournaments data with details-->
   <div class="my-tour m-2" *ngFor="let tournament of tournaments">
     <div class="my-tour-header m-3 d-flex flex-row justify-content-between">
-      <h5 class="tour-profile">{{tournament["Profile Name"]}}</h5>
-      <p class="date d-flex align-items-center">23-Sept-2018 <span class="time ml-2">03:00 PM</span></p>
+      <h5 class="tour-profile">{{tournament["type"]}}<br>
+        <span *ngIf="tournament['map']!=null">Map: {{tournament["map"]}} </span>
+        <span *ngIf="tournament['map']==null">Map: Classic </span>
+      </h5>
+      <p class="date d-flex align-items-center"> {{tournament["date"]}} <span class="time ml-2">{{tournament["time"]}}</span></p>
     </div>
+
     <div class="my-tour-body m-3">
-      <p>Joining Amout: Rs.50</p>
+      <p>Joining Amout: <em>Rs.</em>&nbsp;{{tournament["entry_fees"]}}</p>
     </div>
+    
     <div class="my-tour-footer m-3 d-flex flex-row justify-content-between">
-      <h6 class="tour-prize">Prize: <span>Ear-Phones</span></h6>
-      <p class="tour-organizer"><span class="icon">@</span>{{tournament["Profile Name"]}}</p>
+
+      <a class="tour-prize btn btn-outline-secondary m-0 py-2 px-3">
+        Prizes</a>
+
+      <p class="tour-organizer"><span class="icon">@</span>{{tournament["name"]}}</p>
     </div>
-  </div>
-</div>>
+  <!-- </div>
+  <ng-template #popPrizes let-prizeStart="prizes">
+    {{prizeStart["per_kill"]}}
+  </ng-template> -->
+</div>

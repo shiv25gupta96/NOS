@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Accounts } from '../data/tournamentsData';
+import { Tournaments } from '../data/tournamentsData';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TournamentManagerService {
 
-  tournaments: Object[] = Accounts;
+  tournaments: Object[] = Tournaments;
 
   constructor() { }
 

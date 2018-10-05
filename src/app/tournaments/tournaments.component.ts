@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TournamentManagerService } from '../services/tournament-manager.service';
 import { Title } from '@angular/platform-browser';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 // import * as tourn from '../data/tournament.json';
 
 @Component({

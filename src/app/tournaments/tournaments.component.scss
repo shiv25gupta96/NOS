@@ -6,6 +6,9 @@
     position: relative;
     background: inherit;
     overflow: hidden;
+    & *{
+        z-index: 100;
+    }
     &:after{
         content: "";
         background: inherit;
@@ -39,6 +42,11 @@
     }
     .tour-profile{
         color: #dcd427;
+        span{
+            font-size: 0.8rem;
+            color: white;
+            font-family: initial;
+        }
     }
     .tour-prize span{
         color: #779933;

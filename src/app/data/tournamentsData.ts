@@ -50,7 +50,6 @@ export const Accounts = [{
   "User Name": "pubgtournaments_daily"
 }]
 
-
 export const Tournaments = [
     {
         "name": "Yo Yo pubG",
@@ -105,5 +104,90 @@ export const Tournaments = [
             "type": null,
             "per_kill": 11
         }
-    }
+    },
+    {
+      "name": "Yo Yo pubG",
+      "date": "04-10-2018",
+      "time": "9:00 PM",
+      "type": "Squad",
+      "map": null,
+      "entry_fees": 80,
+      "prizes": {
+          "type": "Chicken Dinner",
+          "Winner": 600,
+          "2nd": 400,
+          "3rd": 200,
+          "4th": 120,
+          "5th": "Free Entry"
+      }
+  },
+  {
+      "name": "pubg battle",
+      "date": "05-10-2018",
+      "time": "09:30 PM",
+      "type": "Solo",
+      "map": null,
+      "entry_fees": 15,
+      "prizes": {
+          "type": null,
+          "per_kill":11
+      }
+  },
+  {
+      "name": "pubg_tournaments_18",
+      "date": "05-10-2018",
+      "time": "10:00 PM",
+      "type": "Solo",
+      "map": "Erangel",
+      "entry_fees": 120,
+      "prizes": [
+          {
+              "type": "Team kills",
+              "15+kills": 50,
+              "25+kills": 100
+          },
+          {
+              "type": "Individual kills",
+              "13+kills": 50,
+              "17+kills": 100
+          },
+          {
+              "type": "Chicken Dinner",
+              "1st": 1100,
+              "2nd": 500,
+              "3rd": 300,
+              "4th": 120,
+              "5th":"50%off in Entry"
+      }]
+  },
+  {
+      "name": "pubg_touraments_winning",
+      "date": "05-10-2018",
+      "time": "09:00 PM",
+      "type": "Solo",
+      "map": "Sanhok",
+      "entry_fees": 50,
+      "prizes": [
+          {
+              "type": "Per Kill",
+              "per_kill":35,
+          },
+          {
+              "type":"Chicken Dinner",
+              "1st": 200,
+              "2nd": 100,
+              "3rd": "Free entry in next match"
+          }
+      ]
+  },
+  {
+      "name": "pubg_tournments.xx",
+      "date": "05-10-2018",
+      "time": "08:30 PM",
+      "type": "Solo",
+      "map": null,
+      "entry_fees": 25,
+      "prizes": {
+      }
+  }
 ];
